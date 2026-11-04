@@ -25,7 +25,7 @@ Then open http://localhost:8000. On Windows, `py -m http.server 8000` also works
 - Hover or keyboard-focus a playlist to reveal its green play button. On touch layouts the button stays visible.
 - Click a cover or title to open its three-track playlist; select any song to play it.
 - Use **Show all**, genre filters, or sidebar **Search** to explore six playlists and twelve fictional songs.
-- Read Clara Hayes's fictional story and play her only track.
+- Open Clara Hayes's dedicated artist journal page and play her only track. Use Back to discovery to return; playback continues across views.
 - Use play/pause, previous/next, shuffle, repeat-one, the draggable timeline, and the volume slider. Tap the speaker to mute/unmute. On phones, volume uses device controls plus the mute button.
 - Press Space to play/pause when focus is outside an interactive control or dialog. Range sliders support the keyboard's arrow keys.
 - Use the plus icon in the player or a track list to save songs. Open **Your Library** or **Liked tracks** to revisit them.
@@ -47,4 +47,16 @@ Edit the `data` object inside the final `<script>` in `index.html` to change pla
 
 ## Validation
 
-The JavaScript passed a syntax check and 49 interaction/data checks in a simulated DOM with a mocked audio engine. The checks cover filtering, search, modal track selection, playback state, queue navigation, seeking, shuffle, repeat, volume, saving, revival counting, and persistence. Visual browser QA and real audio output were not verified in the build environment because the browser-control tool was unavailable.
+The JavaScript passed a syntax check and 52 interaction/data checks in a simulated DOM with a mocked audio engine. The checks cover filtering, search, modal track selection, playback state, queue navigation, seeking, shuffle, repeat, volume, saving, revival counting, and persistence. Visual browser QA and real audio output were not verified in the build environment because the browser-control tool was unavailable.
+
+## GitHub Pages
+
+The project is stored at `Aashu-P/website-hawk` on `main`. To make it accessible to everyone:
+
+1. In repository Settings → General → Danger Zone, change visibility to Public.
+2. In Settings → Pages, select Deploy from a branch, then `main` and `/ (root)`, and Save.
+3. After GitHub finishes deployment, open https://aashu-p.github.io/website-hawk/.
+
+The artist journal has a shareable route at `#artist/clara-hayes`. It works on local files and GitHub Pages without server routing.
+
+The heading styles are scoped to `.app` so Tailwind's asynchronously loaded reset cannot override their size, weight, or spacing.
