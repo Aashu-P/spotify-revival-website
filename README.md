@@ -47,7 +47,7 @@ Edit the `data` object inside the final `<script>` in `index.html` to change pla
 
 ## Validation
 
-The JavaScript passed a syntax check and 52 interaction/data checks in a simulated DOM with a mocked audio engine. The checks cover filtering, search, modal track selection, playback state, queue navigation, seeking, shuffle, repeat, volume, saving, revival counting, and persistence. Visual browser QA and real audio output were not verified in the build environment because the browser-control tool was unavailable.
+The JavaScript passed a syntax check and 137 interaction/data checks in a simulated DOM with a mocked audio engine. The checks cover filtering, search, modal track selection, playback state, queue navigation, seeking, shuffle, repeat, volume, saving, revival counting, and persistence. Visual browser QA and real audio output were not verified in the build environment because the browser-control tool was unavailable.
 
 ## GitHub Pages
 
@@ -60,3 +60,7 @@ The project is stored at `Aashu-P/website-hawk` on `main`. To make it accessible
 The artist journal has a shareable route at `#artist/clara-hayes`. It works on local files and GitHub Pages without server routing.
 
 The heading styles are scoped to `.app` so Tailwind's asynchronously loaded reset cannot override their size, weight, or spacing.
+
+## Every artist has a story
+
+Click the artist name below the song title in the bottom player to open their dedicated journal page. All twelve fictional artists have individual backstories, quotes, and track-specific play/save controls. Playback continues while reading. Artist routes can be shared or opened directly, for example `#artist/mira-vale`.
